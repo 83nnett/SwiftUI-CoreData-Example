@@ -1,6 +1,6 @@
 # SwiftUI-CoreData-Example
 
-A small application to demonstrate an easy implentation of how to include Core Data within a SwiftUI application.
+A small application to demonstrate an easy implentation of how Core Data can be used within a SwiftUI application.
 
 A beginners explanation to CoreData and the codebase:
 
