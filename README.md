@@ -8,4 +8,4 @@ A beginners explanation to CoreData and the codebase:
 * Persistance.swift - This file loads the model exported by ExampleModel, and assigns it.
 * ContentView.swift - This file contains the necessary functions to load in the persisted state and modify it (updating / deleting / viewing values)
 
-![image](https://user-images.githubusercontent.com/62760393/199273315-c9653071-a1d3-40f0-a861-beee743072a6.png)
+![Screenshot](https://user-images.githubusercontent.com/62760393/199273654-19e129c6-69e0-408b-ad9d-0577eaa45410.png)
