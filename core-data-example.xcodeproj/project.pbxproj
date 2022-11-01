@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		91BC099C28E4C44F00594639 /* nyneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC099B28E4C44F00594639 /* nyneApp.swift */; };
+		914E670428F277E5001CA385 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E670328F277E5001CA385 /* Persistance.swift */; };
+		91BC099C28E4C44F00594639 /* cdeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC099B28E4C44F00594639 /* cdeApp.swift */; };
 		91BC099E28E4C44F00594639 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC099D28E4C44F00594639 /* ContentView.swift */; };
 		91BC09A028E4C45000594639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91BC099F28E4C45000594639 /* Assets.xcassets */; };
 		91BC09A328E4C45000594639 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91BC09A228E4C45000594639 /* Preview Assets.xcassets */; };
+		91D4046B291165600093BBB0 /* ExampleModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91D40469291165600093BBB0 /* ExampleModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		91BC099828E4C44F00594639 /* nyne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nyne.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		91BC099B28E4C44F00594639 /* nyneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nyneApp.swift; sourceTree = "<group>"; };
+		914E670328F277E5001CA385 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		91BC099828E4C44F00594639 /* core-data-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "core-data-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91BC099B28E4C44F00594639 /* cdeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cdeApp.swift; sourceTree = "<group>"; };
 		91BC099D28E4C44F00594639 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		91BC099F28E4C45000594639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91BC09A228E4C45000594639 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		91D4046A291165600093BBB0 /* ExampleModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +39,7 @@
 		91BC098F28E4C44F00594639 = {
 			isa = PBXGroup;
 			children = (
-				91BC099A28E4C44F00594639 /* nyne */,
+				91BC099A28E4C44F00594639 /* core-data-example */,
 				91BC099928E4C44F00594639 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +47,22 @@
 		91BC099928E4C44F00594639 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				91BC099828E4C44F00594639 /* nyne.app */,
+				91BC099828E4C44F00594639 /* core-data-example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		91BC099A28E4C44F00594639 /* nyne */ = {
+		91BC099A28E4C44F00594639 /* core-data-example */ = {
 			isa = PBXGroup;
 			children = (
-				91BC099B28E4C44F00594639 /* nyneApp.swift */,
+				91D40469291165600093BBB0 /* ExampleModel.xcdatamodeld */,
+				91BC099B28E4C44F00594639 /* cdeApp.swift */,
 				91BC099D28E4C44F00594639 /* ContentView.swift */,
+				914E670328F277E5001CA385 /* Persistance.swift */,
 				91BC099F28E4C45000594639 /* Assets.xcassets */,
 				91BC09A128E4C45000594639 /* Preview Content */,
 			);
-			path = nyne;
+			path = "core-data-example";
 			sourceTree = "<group>";
 		};
 		91BC09A128E4C45000594639 /* Preview Content */ = {
@@ -70,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		91BC099728E4C44F00594639 /* nyne */ = {
+		91BC099728E4C44F00594639 /* core-data-example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91BC09A628E4C45000594639 /* Build configuration list for PBXNativeTarget "nyne" */;
+			buildConfigurationList = 91BC09A628E4C45000594639 /* Build configuration list for PBXNativeTarget "core-data-example" */;
 			buildPhases = (
 				91BC099428E4C44F00594639 /* Sources */,
 				91BC099528E4C44F00594639 /* Frameworks */,
@@ -82,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = nyne;
+			name = "core-data-example";
 			productName = nyne;
-			productReference = 91BC099828E4C44F00594639 /* nyne.app */;
+			productReference = 91BC099828E4C44F00594639 /* core-data-example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 91BC099328E4C44F00594639 /* Build configuration list for PBXProject "nyne" */;
+			buildConfigurationList = 91BC099328E4C44F00594639 /* Build configuration list for PBXProject "core-data-example" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				91BC099728E4C44F00594639 /* nyne */,
+				91BC099728E4C44F00594639 /* core-data-example */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				91BC099E28E4C44F00594639 /* ContentView.swift in Sources */,
-				91BC099C28E4C44F00594639 /* nyneApp.swift in Sources */,
+				914E670428F277E5001CA385 /* Persistance.swift in Sources */,
+				91D4046B291165600093BBB0 /* ExampleModel.xcdatamodeld in Sources */,
+				91BC099C28E4C44F00594639 /* cdeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +203,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -266,21 +274,21 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"nyne/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"core-data-example/Preview Content\"";
 				DEVELOPMENT_TEAM = 9B5673N9GQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nyne;
+				PRODUCT_BUNDLE_IDENTIFIER = com.83nnett.cde;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -295,21 +303,21 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"nyne/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"core-data-example/Preview Content\"";
 				DEVELOPMENT_TEAM = 9B5673N9GQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nyne;
+				PRODUCT_BUNDLE_IDENTIFIER = com.83nnett.cde;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,7 +328,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		91BC099328E4C44F00594639 /* Build configuration list for PBXProject "nyne" */ = {
+		91BC099328E4C44F00594639 /* Build configuration list for PBXProject "core-data-example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91BC09A428E4C45000594639 /* Debug */,
@@ -329,7 +337,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91BC09A628E4C45000594639 /* Build configuration list for PBXNativeTarget "nyne" */ = {
+		91BC09A628E4C45000594639 /* Build configuration list for PBXNativeTarget "core-data-example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91BC09A728E4C45000594639 /* Debug */,
@@ -339,6 +347,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		91D40469291165600093BBB0 /* ExampleModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				91D4046A291165600093BBB0 /* ExampleModel.xcdatamodel */,
+			);
+			currentVersion = 91D4046A291165600093BBB0 /* ExampleModel.xcdatamodel */;
+			path = ExampleModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 91BC099028E4C44F00594639 /* Project object */;
 }

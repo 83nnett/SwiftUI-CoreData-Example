@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="22A5358e" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Account" representedClassName="Account" syncable="YES" codeGenerationType="class">
+        <attribute name="accountID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Checkout" representedClassName="Checkout" syncable="YES" codeGenerationType="class">
+        <attribute name="checkoutID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="orderNumber" optional="YES" attributeType="String"/>
+        <attribute name="productName" optional="YES" attributeType="String"/>
+        <attribute name="productPrice" optional="YES" attributeType="String"/>
+        <attribute name="productPriceCurrency" optional="YES" attributeType="String"/>
+        <attribute name="productSize" optional="YES"/>
+        <attribute name="siteDomain" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Product" representedClassName="Product" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="price" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Profile" representedClassName="Profile" syncable="YES" codeGenerationType="class">
+        <attribute name="b_cardCVV" optional="YES" attributeType="String"/>
+        <attribute name="b_cardExpiry" optional="YES" attributeType="String"/>
+        <attribute name="b_cardNumber" optional="YES" attributeType="String"/>
+        <attribute name="b_email" optional="YES" attributeType="String"/>
+        <attribute name="b_phoneNumber" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="linkedAccountID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="profileID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="s_addressLine1" optional="YES" attributeType="String"/>
+        <attribute name="s_addressLine2" optional="YES" attributeType="String"/>
+        <attribute name="s_city" optional="YES" attributeType="String"/>
+        <attribute name="s_country" optional="YES" attributeType="String"/>
+        <attribute name="s_name" optional="YES" attributeType="String"/>
+        <attribute name="s_state" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ProxyList" representedClassName="ProxyList" syncable="YES" codeGenerationType="class">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="listID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="proxies" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Task" representedClassName="Task" syncable="YES" codeGenerationType="class">
+        <attribute name="accountID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="monitorInput" optional="YES" attributeType="String"/>
+        <attribute name="productSize" optional="YES" attributeType="String"/>
+        <attribute name="profileID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="proxyListID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="siteDomain" optional="YES" attributeType="String"/>
+        <attribute name="taskID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="taskMode" optional="YES" attributeType="String"/>
+    </entity>
+</model>
